@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo Dojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="dojo">DojoWheather</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="weatherReport()">burbank</a></li>
+                    <li><a href="#" onclick="weatherReport()">Chicago</a></li>
+                    <li><a href="#" onclick="weatherReport()">Dallas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row city-header">
+            <h2>San José</h2>
+            <div>show temperature in 
+                <select onchange="calculateDegrees(this.value)">
+                    <option value="c">°C</option>
+                    <option value="f">°F</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-1">
+                <div class="card">
+                    <h2>Today</h2>
+                    <img src="some_rain.png">
+                    <p> some rain</p>
+                    <div class="temperature">
+                        <div class="max">24°</div>
+                        <div class="min">18°</div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="card">
+                    <h2>Tomorrow</h2>
+                    <img src="some_sun.png">
+                    <p> some sun</p>
+                    <div class="temperature">
+                        <div class="max">27°</div>
+                        <div class="min">19°</div>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="card">
+                    <h2>Friday</h2>
+                    <img src="some_clouds.png">
+                    <p> some clouds</p> 
+                    <div class="temperature">
+                        <div class="max">21°</div>
+                        <div class="min">16°</div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="card">
+                    <h2>Saturday</h2>
+                    <img src="some_sun.png">
+                    <p> some sun</p>
+                    <div class="temperature">
+                        <div class="max">26°</div>
+                        <div class="min">21°</div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="row alert" id="alert">
+            <img src="cookie.png">
+            <div class="alert-body">
+                <h4>Stop!Cookie time</h4>
+                <p>we use cookies(sadly not edibles ones) to personalize content and ads,to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="removeAlert()">Accept</button>
+        </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>

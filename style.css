@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+header {
+    background-color: #9fc5f8;
+    color: white;
+    padding: 1em;
+}
+
+.header-container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-left: 1em;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    padding: 1em 0;
+}
+
+.col-1{
+    flex: 1;
+}
+
+
+.city-header{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: rgb(215, 212, 212);
+    margin: 0 0.5em;
+    text-align: center;
+    height: 400px;
+}
+
+.card h2 {
+    padding: 1em 0;
+}
+
+.card img {
+    width: 60%;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.alert {
+    background-color: #eeeeee;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 1em;
+    width: 1000px;
+}
+
+.alert img {
+    margin-left: 2em;
+}
+
+.alert button {
+    margin-right: 2em;
+    background-color: #9fc5f8;
+    border: 2px solid black;
+    color: white;
+    width: 150px;
+    box-shadow: 3px 3px 0px black;
+}
+.alert .alert-body{
+    margin: 0 1em;
+}
+
+.temperature{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.temperature .max{
+    color: red;
+}
+
+.temperature .min{
+    color: blue;
+}
